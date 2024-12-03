@@ -12,5 +12,10 @@
       "dest": "app.py"
     }
   ],
-  "buildCommand": "apt-get update && apt-get install -y python3-distutils && pip install -r requirements.txt"
+  "build": {
+    "env": {
+      "PYTHON_VERSION": "3.10"
+    }
+  },
+  "buildCommand": "apt-get update && apt-get install -y python3-distutils python3.10-venv && python3.10 -m ensurepip && pip install --upgrade pip setuptools wheel && pip install -r requirements.txt"
 }
