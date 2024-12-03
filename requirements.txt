@@ -1,6 +1,5 @@
 Flask==3.0.3
 gunicorn==23.0.0
-gspread==*  # Hoặc phiên bản cụ thể
 click==8.1.7 # Nếu bạn sử dụng Click
 Jinja2==3.1.4 # Cần thiết cho Flask
 Werkzeug==3.0.6 # Cần thiết cho Flask
