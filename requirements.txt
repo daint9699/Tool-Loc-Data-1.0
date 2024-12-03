@@ -6,12 +6,12 @@ charset-normalizer==3.4.0
 click==8.1.7
 et_xmlfile==2.0.0
 Flask==3.0.3
-google-api-core==2.22.0
+google-api-core==2.21.0
 google-api-python-client==2.50.0  # Hạ cấp phiên bản để tránh xung đột
 google-auth==2.30.0  # Phiên bản tương thích
 google-auth-httplib2==0.2.0
 google-auth-oauthlib==1.2.1
-googleapis-common-protos==1.66.0
+googleapis-common-protos==3.20.2
 gunicorn==23.0.0
 httplib2==0.22.0
 idna==3.10
@@ -25,7 +25,7 @@ openpyxl==3.1.5
 packaging==24.2
 pandas==1.5.0  # Giảm phiên bản
 proto-plus==1.25.0
-protobuf==3.19.6
+protobuf>=3.12,<4
 pyasn1==0.6.1
 pyasn1_modules==0.4.1
 pyparsing==3.1.4
