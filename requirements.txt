@@ -6,8 +6,8 @@ click==8.1.7
 et_xmlfile==2.0.0
 Flask==3.0.3
 google-api-core==2.23.0
-google-api-python-client==2.154.0
-google-auth==2.36.0
+google-api-python-client==2.50.0  # Hạ cấp phiên bản để tránh xung đột
+google-auth==2.37.0  # Phiên bản tương thích
 google-auth-httplib2==0.2.0
 google-auth-oauthlib==1.2.1
 googleapis-common-protos==1.66.0
@@ -18,11 +18,11 @@ importlib_metadata==8.5.0
 itsdangerous==2.2.0
 Jinja2==3.1.4
 MarkupSafe==2.1.5
-numpy==1.24.4
+numpy==1.21.0  # Giảm phiên bản để tương thích
 oauthlib==3.2.2
 openpyxl==3.1.5
 packaging==24.2
-pandas==2.0.3
+pandas==1.5.0  # Giảm phiên bản
 proto-plus==1.25.0
 protobuf==5.29.0
 pyasn1==0.6.1
