@@ -5,13 +5,13 @@ certifi==2024.8.30
 charset-normalizer==3.4.0
 click==8.1.7
 et_xmlfile==2.0.0
-Flask==3.0.3
-google-api-core==2.22.0
-google-api-python-client==2.50.0  # Hạ cấp phiên bản để tránh xung đột
-google-auth==2.30.0  # Phiên bản tương thích
+Flask==2.1.0  # Hạ cấp Flask để tránh xung đột với Streamlit
+google-api-core==2.23.0  # Cập nhật google-api-core để tương thích với protobuf
+google-api-python-client==2.50.0  # Phiên bản ổn định và tương thích với protobuf
+google-auth==2.30.0  # Phiên bản ổn định và tương thích với google-api-core
 google-auth-httplib2==0.2.0
 google-auth-oauthlib==1.2.1
-googleapis-common-protos==1.65.0
+googleapis-common-protos==1.66.0  # Phiên bản ổn định và tương thích với protobuf
 gunicorn==23.0.0
 httplib2==0.22.0
 idna==3.10
@@ -19,13 +19,13 @@ importlib_metadata==8.5.0
 itsdangerous==2.2.0
 Jinja2==3.1.4
 MarkupSafe==2.1.5
-numpy==1.21.0  # Giảm phiên bản để tương thích
+numpy==1.21.0  # Giảm phiên bản để tương thích với Streamlit
 oauthlib==3.2.2
 openpyxl==3.1.5
 packaging==24.2
-pandas==1.5.0  # Giảm phiên bản
+pandas==1.5.0  # Giảm phiên bản để tương thích với numpy và các gói khác
 proto-plus==1.25.0
-protobuf==3.19.6
+protobuf==3.19.6  # Phiên bản tương thích với Streamlit và google-api-core
 pyasn1==0.6.1
 pyasn1_modules==0.4.1
 pyparsing==3.1.4
@@ -40,4 +40,3 @@ uritemplate==4.1.1
 urllib3==2.2.3
 Werkzeug==3.0.6
 zipp==3.20.2
-streamlit==1.18.0
